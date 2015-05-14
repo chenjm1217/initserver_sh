@@ -7,7 +7,6 @@ then
 fi
 
 # 创建工作目录
-mkdir ~/download
 cd ~/download
 
 wd=`pwd` 
@@ -21,38 +20,40 @@ then
 fi
 
 softwares=("vim-7.4.tar.bz2" "Python-2.7.9.tar.xz")
-urls=("ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2" "https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tar.xz")
-echo "will download following software:"
+echo "will tar following software:"
 
-echo "${softwares[0]}  from  ${urls[0]}"
-echo "${softwares[1]}  from  ${urls[1]}"
+count=${#softwares[@]}
+for (( i=0;i<${count};i++ ))
+do
+    echo "${softwares[${i}]}"
+done
 
-echo -e "download?[y/N] \c"
+echo -e "tar -xvf now?[y/N] \c"
 read ans
 
 if [ "${ans}"x = "N"x -o "${ans}"x = "n"x ]
 then
     echo "nothing to do!"
 else
-    echo -e "download one by one or together?[o/t] \c"
+    echo -e "tar -xvf one by one or together?[o/t] \c"
     read ans
     
     count=${#softwares[@]}
-    echo "total download ${count} softwares"
+    echo "total tar -xvf ${count} softwares"
     for ((i=0;i<${count};i++ ))
     do
         if [ "${ans}"x = "T"x -o "${ans}"x = "t"x ]
         then
-            wget ${urls[${i}]}
+            tar xvf ${softwares[${i}]}
         else
-            echo -e "download [${softwares[${i}]}]?[y/N] \c"
-            read down
+            echo -e "tar xvf [${softwares[${i}]}]?[y/N] \c"
+            read tarnow
             
-            if [ "${down}"x = "n"x -o "${down}"x = "N"x ]
+            if [ "${tarnow}"x = "n"x -o "${tarnow}"x = "N"x ]
             then
                 echo -e "jump [${softwares[${i}]}]"
             else
-                wget ${urls[${i}]}
+                tar xvf ${softwares[${i}]}
             fi
             echo "Next------------------->"
             echo "Next------------------->"
@@ -60,5 +61,5 @@ else
     done
 fi
 
-echo "all softwares dowload finished!"
+echo "all softwares tar xvf finished!"
 echo "done!"
