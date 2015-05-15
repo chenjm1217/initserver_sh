@@ -21,7 +21,7 @@ read ans
 
 if [ "${ans}" = "N"x -o "${ans}"x = "n"x ]
 then
-    echo -e "nothing to do!\n"
+    echo "nothing to do!"
 else
     user=`whoami`
     if [ "$user"x = "root"x ]
@@ -74,5 +74,3 @@ else
     sed -i "/^root/ a\\${str}" /etc/sudoers
     echo "done!"
 fi
-
-echo -e "\ndone!"

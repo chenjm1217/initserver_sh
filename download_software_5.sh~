@@ -55,7 +55,7 @@ read ans
 
 if [ "${ans}"x = "N"x -o "${ans}"x = "n"x ]
 then
-    echo -e "nothing to do!\n"
+    echo "nothing to do!"
 else
     echo -e "download one by one or together?[o/t] \c"
     read ans
@@ -81,7 +81,7 @@ else
             echo "Next------------------->"
         fi
     done
-    echo -e "all softwares dowload finished!\n"
 fi
 
+echo "all softwares dowload finished!"
 echo "done!"

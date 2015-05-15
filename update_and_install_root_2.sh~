@@ -31,5 +31,4 @@ else
     sudo yum install -y man wget ctags cscope git lrzsz openssh-server openssh-client openssl-devel
     sudo yum groupinstall -y "Development Tools"
 fi
-
-echo -e "\ndone!" 
+   

@@ -27,14 +27,7 @@ then
     exit -1
 fi
 
-softwares=("vim-7.4.tar.bz2" 
-"Python-2.7.9.tar.xz" 
-"cfe-3.6.0.src.tar.xz" 
-"llvm-3.6.0.src.tar.xz" 
-"compiler-rt-3.6.0.src.tar.xz" 
-"libcxx-3.6.0.src.tar.xz" 
-"clang-tools-extra-3.6.0.src.tar.xz")
-
+softwares=("vim-7.4.tar.bz2" "Python-2.7.9.tar.xz")
 echo "will tar following softwares:"
 
 count=${#softwares[@]}
@@ -48,7 +41,7 @@ read ans
 
 if [ "${ans}"x = "N"x -o "${ans}"x = "n"x ]
 then
-    echo -e "nothing to do!\n"
+    echo "nothing to do!"
 else
     echo -e "tar -xvf one by one or together?[o/t] \c"
     read ans
@@ -74,7 +67,7 @@ else
             echo "Next------------------->"
         fi
     done
-    echo "all softwares tar xvf finished!"
 fi
 
+echo "all softwares tar xvf finished!"
 echo "done!"

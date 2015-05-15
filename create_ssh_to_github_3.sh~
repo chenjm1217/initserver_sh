@@ -3,7 +3,6 @@
 user=`whoami`
 if [ "$user"x = "root"x ]
 then
-    echo "the current user is root. please change to normal user."
     exit
 fi
 
