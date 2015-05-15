@@ -57,11 +57,17 @@ then
     echo -e "nothing to do!\n"
 else
     # start the YouCopleteMe install shell to compile the libclang.so
+    if [ ! -f "./install.sh" ]
+    then
+        echo -e "install shell script not found! make sure YouCompleteMe is installed by Vundle!\n "
+        exit -1
+    fi
+
     ./install.sh --clang-completer --system-libclang
     echo "YouCompleteMe install shell finished!"
     
     # copy comfig file to user home dir
-    cp .vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py ~
+    cp ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py ~
     echo "YouCompleteMe install finished, enjoy it! ^^"
 fi
 
