@@ -37,8 +37,9 @@ read ans
 # 测试
 echo "testing ssh to github..."
 ssh -T git@github.com
+echo "testing : done!"
 
-# config git
+# config git global setting
 cmd="git config --global user.name 'jeremy'"
 echo ${cmd}
 eval ${cmd}
