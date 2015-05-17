@@ -63,6 +63,7 @@ else
         exit -1
     fi
 
+    # make sure you have installed system clang corrented and the python 2.x version with --enable-shared
     ./install.sh --clang-completer --system-libclang
     echo "YouCompleteMe install shell finished!"
     
