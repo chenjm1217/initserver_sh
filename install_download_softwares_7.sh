@@ -47,7 +47,7 @@ install_steps=( "rm -rf Python-2.7.9:"\
 "sudo yum install -y ncurses-devel ruby ruby-devel lua lua-devel luajit luajit-devel mercurial "\
 "tcl-devel perl perl-devel perl-ExtUtils-ParseXS perl-ExtUtils-XSpp perl-ExtUtils-CBuilder perl-ExtUtils-Embed:"\
 "./configure --with-features=huge  --enable-cscope --enable-multibyte --enable-fontset --enable-xim --enable-sniff "\
-" --enable-pythoninterp  --enable-luainterp  --with-python-config-dir=/usr/local/lib/python2.7/config --enable-rubyinterp --enable-perlinterp"\
+" --enable-pythoninterp  --enable-luainterp  --with-python-config-dir=/usr/local/lib/python2.7/config --enable-rubyinterp --enable-perlinterp:"\
 "make:sudo make install" 
 
 "rm -rf cmake-3.2.2:"\
