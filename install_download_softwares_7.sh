@@ -36,14 +36,18 @@ softwares=("Python-2.7.9"
 install_steps=( "rm -rf Python-2.7.9:"\
 "tar xvf Python-2.7.9.tar.xz:cd Python-2.7.9:"\
 "./configure --prefix=/usr/local --enable-shared LDFLAGS='-Wl,-rpath /usr/local/lib':"\
-"make:sudo make install"
+"make:sudo make install:"\
+"sudo ln -s /usr/local/lib/libpython2.7.so.1.0  /usr/lib64/libpython2.7.so.1.0"
+# /usr/local/lib/libpython2.7.so.1.0是python安装到/usr/local后的so路径
+# 必须注意要使/usr/lib64/libpython2.7.so.1.0的路径与python查找so的路径匹配。可以通过ldd /dir/to/python来比较
 
 "rm -rf vim74:"\
 "tar xvf vim-7.4.tar.bz2:cd vim74:"\
 "sudo yum remove vim vim-enhanced vim-common:"\
-"sudo yum -y install  -y ncurses-devel:"\
-"./configure --with-features=huge --enable-multibyte --enable-fontset --enable-cscope --enable-xim "\
-" --enable-sniff --enable-gui=auto --enable-rubyinterp --enable-luainterp --enable-pythoninterp --with-python-config-dir=/usr/local/lib/python2.7/config:"\
+"sudo yum install -y ncurses-devel ruby ruby-devel lua lua-devel luajit luajit-devel mercurial "\
+"tcl-devel perl perl-devel perl-ExtUtils-ParseXS perl-ExtUtils-XSpp perl-ExtUtils-CBuilder perl-ExtUtils-Embed:"\
+"./configure --with-features=huge  --enable-cscope --enable-multibyte --enable-fontset --enable-xim --enable-sniff "\
+" --enable-pythoninterp  --enable-luainterp  --with-python-config-dir=/usr/local/lib/python2.7/config --enable-rubyinterp --enable-perlinterp"\
 "make:sudo make install" 
 
 "rm -rf cmake-3.2.2:"\
