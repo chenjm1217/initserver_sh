@@ -21,7 +21,7 @@ repos=("initserver_sh"
 
 git_urls=("git@github.com:chenjm1217/initserver_sh.git" 
 "git@github.com:chenjm1217/vimrc.git" 
-"https://github.com/chenjm1217/spf13-vim.git")
+"git@github.com:chenjm1217/spf13-vim.git")
 
 repo_count=${#repos[*]}
 echo -e "\nwill download following ${repo_count} repos from github:"

@@ -43,7 +43,7 @@ install_steps=( "rm -rf Python-2.7.9:"\
 "sudo yum remove vim vim-enhanced vim-common:"\
 "sudo yum -y install  -y ncurses-devel:"\
 "./configure --with-features=huge --enable-multibyte --enable-fontset --enable-cscope --enable-xim "\
-" --enable-sniff --enable-gui=auto --enable-pythoninterp --with-python-config-dir=/usr/local/lib/python2.7/config --enable-rubyinterp --enable-luainterp:"\
+" --enable-sniff --enable-gui=auto --enable-rubyinterp --enable-luainterp --enable-pythoninterp --with-python-config-dir=/usr/local/lib/python2.7/config:"\
 "make:sudo make install" 
 
 "rm -rf cmake-3.2.2:"\
