@@ -31,6 +31,8 @@ softwares=("Python-2.7.9"
 "vim74" 
 "cmake-3.2.2"
 "iftop-0.17" 
+"jdk-8u20-linux-x64.tar.gz" 
+"apache-tomcat-7.0.62-src.tar.gz" 
 "clang-3.4.2")
 
 # python2.7 must enable share like --enable-share!!! to make YouCompleteMe install ok
