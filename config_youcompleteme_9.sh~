@@ -36,6 +36,9 @@ fi
 echo ${cmake_version}
 echo "ok"
 
+cd
+cd ${work_dir}
+
 echo -e "do you want to backup YouCompleteMe first?[y/N] \c"
 read ans
 if [ "${ans}"x = "n"x -o "${ans}"x = "N"x ]
