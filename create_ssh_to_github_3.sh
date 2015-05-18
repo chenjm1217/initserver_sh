@@ -23,10 +23,11 @@ else
     ssh-keygen -t rsa -C "chenjm1217@126.com"
 fi
 
+read ans
 # 将密钥对加入ssh-agent
 echo "请新建一个ssh连接，执行以下命令，将密钥对加入ssh-agent"
 echo "ssh-agent bash"
-echo "sh-add ~/.ssh/id_rsa"
+echo "ssh-add ~/.ssh/id_rsa"
 
 echo "请将公钥 ~/.ssh/id_rsa.pub 中的内容拷贝到github服务器上"
 read ans

@@ -33,7 +33,8 @@ softwares=("vim-7.4.tar.bz2"
 "llvm-3.4.2.src.tar.gz" 
 "compiler-rt-3.4.src.tar.gz" 
 "clang-tools-extra-3.4.src.tar.gz" 
-"cmake-3.2.2.tar.gz")
+"cmake-3.2.2.tar.gz" 
+"iftop-0.17.tar.gz")
 
 echo "will tar following softwares:"
 

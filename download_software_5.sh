@@ -31,7 +31,8 @@ softwares=("vim-7.4.tar.bz2"
 "llvm-3.4.2.src.tar.xz" 
 "compiler-rt-3.4.src.tar.xz"  
 "clang-tools-extra-3.4.src.tar.xz" 
-"cmake-3.2.2.tar.gz")
+"cmake-3.2.2.tar.gz" 
+"iftop-0.17.tar.gz")
 
 
 urls=("ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2" 
@@ -40,7 +41,8 @@ urls=("ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2"
 "http://llvm.org/releases/3.4.2/llvm-3.4.2.src.tar.gz" 
 "http://llvm.org/releases/3.4/compiler-rt-3.4.src.tar.gz" 
 "http://llvm.org/releases/3.4/clang-tools-extra-3.4.src.tar.gz" 
-"http://www.cmake.org/files/v3.2/cmake-3.2.2.tar.gz")
+"http://www.cmake.org/files/v3.2/cmake-3.2.2.tar.gz" 
+"http://www.ex-parrot.com/pdw/iftop/download/iftop-0.17.tar.gz")
 
 
 scount=${#softwares[*]}
