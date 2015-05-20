@@ -30,6 +30,7 @@ fi
 softwares=("Python-2.7.9" 
 "vim74" 
 "cmake-3.2.2"
+"webbench-1.5.tar.gz"
 "iftop-0.17" 
 "clang-3.4.2")
 
@@ -59,6 +60,11 @@ install_steps=( "rm -rf Python-2.7.9:"\
 "sudo yum install ncurses-devel:"\
 "cd cmake-3.2.2:"\
 "./configure:make:sudo make install"
+
+"rm -rf webbench-1.5:"\
+"tar xvf webbench-1.5.tar.gz:"\
+"cd webbench-1.5:"\
+"make:sudo make install"
 
 "rm -rf iftop-0.17:"\
 "tar xvf iftop-0.17.tar.gz:"\

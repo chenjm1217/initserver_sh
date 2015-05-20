@@ -32,8 +32,9 @@ softwares=("vim-7.4.tar.bz2"
 "compiler-rt-3.4.src.tar.xz"  
 "clang-tools-extra-3.4.src.tar.xz" 
 "cmake-3.2.2.tar.gz" 
+"webbench-1.5.tar.gz"
 "iftop-0.17.tar.gz" 
-"apache-tomcat-7.0.62-src.tar.gz")
+"apache-tomcat-7.0.62.tar.gz")
 
 
 urls=("ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2" 
@@ -43,8 +44,9 @@ urls=("ftp://ftp.vim.org/pub/vim/unix/vim-7.4.tar.bz2"
 "http://llvm.org/releases/3.4/compiler-rt-3.4.src.tar.gz" 
 "http://llvm.org/releases/3.4/clang-tools-extra-3.4.src.tar.gz" 
 "http://www.cmake.org/files/v3.2/cmake-3.2.2.tar.gz" 
+"http://home.tiscali.cz/~cz210552/distfiles/webbench-1.5.tar.gz"
 "http://www.ex-parrot.com/pdw/iftop/download/iftop-0.17.tar.gz" 
-"http://apache.fayea.com/tomcat/tomcat-7/v7.0.62/src/apache-tomcat-7.0.62-src.tar.gz")
+"http://mirrors.hust.edu.cn/apache/tomcat/tomcat-7/v7.0.62/bin/apache-tomcat-7.0.62.tar.gz")
 
 
 scount=${#softwares[*]}
