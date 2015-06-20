@@ -28,7 +28,7 @@ if [ "${ans}"x = "N"x -o "${ans}"x = "n"x ]
 then
     echo "nothing to do!"
 else
-    sudo yum install -y man screen wget ctags cscope git lrzsz openssh-server openssh-client openssl-devel
+    sudo yum install -y man epel-release screen wget ctags cscope git git-svn lrzsz ncurses-devel openssh-server openssh-clients openssl openssl-devel nc gdb ntsysv
     sudo yum groupinstall -y "Development Tools"
 fi
 
